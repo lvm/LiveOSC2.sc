@@ -22,7 +22,7 @@ LiveOSC2 {
   }
 
   shutdown {
-    LiveOSC.prClose;
+    LiveOSC2.prClose;
   }
 
   // Song
