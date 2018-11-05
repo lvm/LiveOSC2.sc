@@ -416,7 +416,57 @@ LiveOSC2 {
   }
 
   // Browser
-  browser_load { |name|
-    this.prSend("browser/load", [name]);
+  browserPrSend { |path, name|
+    this.prSend("browser/%/load".format(path), name)
   }
+
+  browser_drums_load { |name|
+    this.browserPrSend("drums", [name]);
+  }
+
+  browser_instruments_load { |name|
+    this.browserPrSend("instruments", [name]);
+  }
+
+  browser_audiofx_load { |name|
+    this.browserPrSend("audiofx", [name]);
+  }
+
+  browser_midifx_load { |name|
+    this.browserPrSend("midifx", [name]);
+  }
+
+  browser_m4l_load { |name|
+    this.browserPrSend("m4l", [name]);
+  }
+
+  browser_plugins_load { |name|
+    this.browserPrSend("plugins", [name]);
+  }
+
+  browser_clips_load { |name|
+    this.browserPrSend("clips", [name]);
+  }
+
+  browser_samples_load { |name|
+    this.browserPrSend("samples", [name]);
+  }
+
+  browser_packs_load { |name|
+    this.browserPrSend("packs", [name]);
+  }
+
+  browser_userlib_load { |name|
+    this.browserPrSend("userlib", [name]);
+  }
+
+  browser_currentprj_load { |name|
+    this.browserPrSend("currentprj", [name]);
+  }
+
+  browser_userfolders_load { |name|
+    this.browserPrSend("userfolders", [name]);
+  }
+
+
 }
