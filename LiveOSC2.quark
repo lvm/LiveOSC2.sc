@@ -1,0 +1,9 @@
+(
+\name: "LiveOSC2",
+\summary: "SuperCollider bindings for LiveOSC2 + Ableton",
+\version: "0.0.1",
+\url: "https://github.com/lvm/LiveOSC2.sc",
+\dependencies: [],
+\copyright: "Mauro Lizaur, 2018",
+\license: "MIT"
+)

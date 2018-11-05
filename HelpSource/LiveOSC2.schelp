@@ -1,0 +1,30 @@
+CLASS:: LiveOSC2
+summary:: SuperCollider bindings for LiveOSC2 + Ableton
+
+DESCRIPTION::
+
+Provides a way to control Ableton Scenes, Tracks, Clips, etc. through LiveOSC2.
+
+EXAMPLES::
+
+code::
+
+l = LiveOSC2.new;
+// change tempo
+l.tempo(128);
+
+// select a track
+l.track_select(1);
+// load a drumkit (or other instruments)
+l.browser_load("505.adg")
+
+// fiddle with Sends
+l.track_send(1, 0, 0.5); // 0 -> Send A, 1 -> Send B, etc.
+
+// and volume
+l.track_volume(1, 0.65);
+
+// or mute it.
+l.track_mute(1, 1);
+
+::
