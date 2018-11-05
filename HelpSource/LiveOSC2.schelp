@@ -9,22 +9,26 @@ Provides a way to control Ableton Scenes, Tracks, Clips, etc. through LiveOSC2.
 EXAMPLES::
 code::
 
+// LiveOSC2.sc talks to LiveOSC2 (an Ableton Control Surface)
 l = LiveOSC2.new;
-// change tempo
-l.tempo(128);
 
-// select a track
+// which allows to change the tempo
+l.tempo(136);
+
+// mute tracks
+l.track_mute(0, 0);
+l.track_mute(1, 0);
+
+// move around between tracks
 l.track_select(1);
-// load a drumkit (or other instruments)
-l.browser_load("505.adg")
+
+// load drumkits (or other instruments)
+l.browser_load("505.adg");
 
 // fiddle with Sends
-l.track_send(1, 0, 0.5); // 0 -> Send A, 1 -> Send B, etc.
+l.track_send(1, 1, 0);
 
 // and volume
-l.track_volume(1, 0.65);
-
-// or mute it.
-l.track_mute(1, 1);
+l.track_volume(0, 0.65);
 
 ::
