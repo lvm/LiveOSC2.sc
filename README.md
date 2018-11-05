@@ -10,10 +10,10 @@ Note: Uses [my fork](https://github.com/lvm/LiveOSC2) of LiveOSC2.
 ## Example
 
 ```
-// LiveOSC2.sc talks to LiveOSC2 (an Ableton Control Surface)
+// LiveOSC2.sc is a SC Extension that talks to LiveOSC2 (an Ableton Control Surface)
 l = LiveOSC2.new;
 
-// which allows to change the tempo
+// and allows to change the tempo
 l.tempo(136);
 
 // mute tracks
@@ -35,4 +35,4 @@ l.track_volume(0, 0.65);
 
 ## License
 
-See [LICENSE]
+See [LICENSE](LICENSE)
