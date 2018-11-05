@@ -1,12 +1,12 @@
 CLASS:: LiveOSC2
 summary:: SuperCollider bindings for LiveOSC2 + Ableton
+related:: Classes/NetAddr
+categories:: External Control
 
 DESCRIPTION::
-
 Provides a way to control Ableton Scenes, Tracks, Clips, etc. through LiveOSC2.
 
 EXAMPLES::
-
 code::
 
 l = LiveOSC2.new;
