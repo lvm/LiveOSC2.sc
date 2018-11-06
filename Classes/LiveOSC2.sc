@@ -194,7 +194,7 @@ LiveOSC2 {
   }
 
   // Return
-  returnSend { |action, args|
+  returnPrSend { |action, args|
     this.prSend("return/%".format(action.asString), args);
   }
 
@@ -263,7 +263,7 @@ LiveOSC2 {
   }
 
   // Master
-  masterSend { |action, args|
+  masterPrSend { |action, args|
     this.prSend("master/%".format(action.asString), args);
   }
 
