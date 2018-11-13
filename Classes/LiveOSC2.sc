@@ -207,6 +207,10 @@ LiveOSC2 {
     this.trackPrSend("monitoring", [track_id, state]);
   }
 
+  trackRouting { |track_id, type, channel|
+    this.trackPrSend("routing", [track_id, type, channel]);
+  }
+
   // Return
   returnPrSend { |action, args|
     this.prSend("return/%".format(action.asString), args);
